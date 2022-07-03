@@ -7,6 +7,7 @@ export default function Layout({ children }) {
         <title>Ellis Custom Homes</title>
         <meta name="description" content="Ellis Custom Homes" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="stylesheet" href="https://use.typekit.net/vns6pru.css" />
       </Head>
       {children}
     </div>
