@@ -14,6 +14,16 @@ body {
     font-family: "Avenir Next", sans-serif;
 }
 
+body {
+  margin: 1rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    margin: 0.8rem;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -30,6 +40,22 @@ a {
 .title {
   font-family: var(--title-font-family);
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
+}
+
+.primaryTitle {
+  font-size: 4rem;
+  color: white;
+}
+
+.secondaryColor {
   color: #bab0b0;
+}
+
+.secondaryTitle {
+  font-size: 2.5rem;
+}
+
+.paragraph {
+  font-weight: 200;
 }

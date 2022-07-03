@@ -3,9 +3,11 @@ import PrimaryButton from "./ButtonPrimary";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex uppercase font-light md:m-16 m-4">
+      <div className="flex uppercase font-light md:mx-24 md:my-16 my-8">
         <div className="basis-1/2 flex flex-col justify-between">
-          <div className="title md:text-3xl text-xl pb-2">Get in Touch</div>
+          <div className="title secondaryColor md:text-3xl text-xl pb-2">
+            Get in Touch
+          </div>
           <div className="md:text-base text-xs pb-2">
             <div>Phone: 979-695-8394</div>
             <div>Fax: 979-764-7999</div>
@@ -16,7 +18,9 @@ export default function Footer() {
           />
         </div>
         <div className="basis-1/2 flex flex-col items-end justify-evenly">
-          <div className="title md:text-3xl text-xl pb-2">Connect</div>
+          <div className="title secondaryColor md:text-3xl text-xl pb-2">
+            Connect
+          </div>
           <div className="md:text-base text-xs pb-2 text-right">
             <div>4500 Carter Creek Pkwy</div>
             <div>Suite 106</div>
@@ -38,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#bab0b0] text-white font-thin text-[10px] w-full text-center">
+      <div className="font-thin text-[10px] w-full text-center">
         © Ellis Custom Homes. Site by{" "}
         <a
           className="underline decoration-from-font"
@@ -46,6 +50,7 @@ export default function Footer() {
         >
           Megan Paradowski
         </a>
+        .
       </div>
     </footer>
   );
