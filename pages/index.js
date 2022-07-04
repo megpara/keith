@@ -12,15 +12,17 @@ export default function Home() {
       <div className="relative">
         <img className="brightness-90" src="miramont-8_pool.jpeg" />
         <div className="absolute flex top-0 left-0 w-full h-full flex-col justify-center text-center">
-          <div className="secondaryColor font-bold text-lg">Est 1990</div>
+          <div className="secondaryColor font-bold md:text-lg text-sm">
+            Est 1990
+          </div>
           <div className="title primaryTitle">Ellis Custom Homes</div>
-          <div className="text-white text-2xl font-thin">
+          <div className="text-white md:text-2xl text-base font-thin">
             Quality construction. Exceptional service.
           </div>
         </div>
       </div>
       <Paragraph>
-        <div className="title secondaryColor secondaryTitle">
+        <div className="title secondaryColor secondaryTitle pb-2">
           Premium Custom Homebuilding
         </div>
         <div className="paragraph">

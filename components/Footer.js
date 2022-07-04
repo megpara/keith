@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="title secondaryColor md:text-3xl text-xl pb-2">
             Get in Touch
           </div>
-          <div className="md:text-base text-xs pb-2">
+          <div className="md:text-sm text-[10px] pb-2">
             <div>Phone: 979-695-8394</div>
             <div>Fax: 979-764-7999</div>
           </div>
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="title secondaryColor md:text-3xl text-xl pb-2">
             Connect
           </div>
-          <div className="md:text-base text-xs pb-2 text-right">
+          <div className="md:text-sm text-[10px] pb-2 text-right">
             <div>4500 Carter Creek Pkwy</div>
             <div>Suite 106</div>
             <div>Bryan, Tx 77802</div>
