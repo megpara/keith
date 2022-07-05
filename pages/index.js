@@ -17,18 +17,6 @@ export default function Home() {
           className="brightness-50 h-screen w-full object-cover"
           src="miramont-8_pool.jpeg"
         />
-        {/* <div
-          className="bg-[#544953] z-10 text-white absolute right-0 top-[50%] h-[70px] w-[50px] mt-[-35px] flex items-center justify-center text-2xl opacity-90"
-          onClick={() => paginate(1)}
-        >
-          <div>{"→"}</div>
-        </div>
-        <div
-          className="bg-[#544953] z-10 text-white absolute top-[50%] h-[70px] w-[50px] mt-[-35px] flex items-center justify-center text-2xl opacity-90"
-          onClick={() => paginate(1)}
-        >
-          <div>{"←"}</div>
-        </div> */}
         <ImageBorder />
         <div className="absolute flex top-0 left-0 w-full h-full flex-col justify-center text-center">
           <div className="secondaryColor font-bold md:text-lg text-sm uppercase tracking-widest">
@@ -56,6 +44,18 @@ export default function Home() {
           className="brightness-75 h-screen w-full object-cover"
           src="Houston-1_12.jpeg"
         />
+        <div
+          className="bg-[#544953] z-10 text-white absolute right-0 top-[50%] h-[70px] w-[50px] mt-[-35px] flex items-center justify-center text-2xl opacity-90"
+          onClick={() => paginate(1)}
+        >
+          <div>{"→"}</div>
+        </div>
+        <div
+          className="bg-[#544953] z-10 text-white absolute top-[50%] h-[70px] w-[50px] mt-[-35px] flex items-center justify-center text-2xl opacity-90"
+          onClick={() => paginate(1)}
+        >
+          <div>{"←"}</div>
+        </div>
         <ImageBorder />
         <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
           <SecondaryButton title="Featured Projects" />
