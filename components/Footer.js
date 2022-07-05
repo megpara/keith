@@ -3,12 +3,12 @@ import PrimaryButton from "./ButtonPrimary";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex uppercase font-light md:mx-24 md:my-16 my-8">
+      <div className="flex uppercase font-light md:mx-24 py-24 mx-4">
         <div className="basis-1/2 flex flex-col justify-between">
           <div className="title secondaryColor md:text-3xl text-xl pb-2">
             Get in Touch
           </div>
-          <div className="md:text-sm text-[10px] pb-2">
+          <div className="md:text-sm text-[10px] pb-2 font-thin tracking-wide">
             <div>Phone: 979-695-8394</div>
             <div>Fax: 979-764-7999</div>
           </div>
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="title secondaryColor md:text-3xl text-xl pb-2">
             Connect
           </div>
-          <div className="md:text-sm text-[10px] pb-2 text-right">
+          <div className="md:text-sm text-[10px] pb-2 text-right font-thin tracking-wide">
             <div>4500 Carter Creek Pkwy</div>
             <div>Suite 106</div>
             <div>Bryan, Tx 77802</div>
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="font-thin text-[10px] w-full text-center">
+      <div className="font-thin text-[10px] w-full md:mx-24 mx-4 pb-[20px] tracking-wide">
         © Ellis Custom Homes. Site by{" "}
         <a
           className="underline decoration-from-font"
