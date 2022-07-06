@@ -61,7 +61,7 @@ export default function Menu({ open, toggle }) {
                         Team
                       </div>
                     </Link>
-                    <Link href="/">
+                    <Link href="/accolades">
                       <div className="cursor-pointer hover:after:content-['-']">
                         Accolades
                       </div>

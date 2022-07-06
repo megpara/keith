@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import ImageBorder from "../components/ImageBorder";
 import ImageBorderSmall from "../components/ImageBorderSmall";
 import Layout from "../components/Layout";
 import Paragraph from "../components/Paragraph";
