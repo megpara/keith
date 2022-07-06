@@ -58,7 +58,7 @@ export const CircleIndicator = () => {
           onClick={() => {
             scrollTo(0, 0);
           }}
-          className="fixed text-[#bab0b0] text-[10px] uppercase tracking-widest bottom-0 left-[50%] w-[120px] ml-[-60px] bottom-[40px] text-center font-semibold"
+          className="fixed text-[#544953] text-[10px] uppercase tracking-widest bottom-0 left-[50%] w-[120px] ml-[-60px] bottom-[40px] text-center font-semibold opacity-50 hover:opacity-60"
         >
           back to top
         </button>

@@ -5,5 +5,14 @@
 	background: url(/public/miramont-8_pool.jpeg) center center / cover no-repeat;
 	z-index: -1;
 }
+.pBackground {
+	background: url(/home.png);
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 @media (max-width: 600px) {
+	.pBackground {
+		background: none;
+	}
 }

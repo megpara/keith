@@ -3,9 +3,10 @@ import PrimaryButton from "./ButtonPrimary";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex uppercase font-light md:mx-24 py-24 mx-4">
+      {/* <footer className="bg-[#f8f7f6]"> */}
+      <div className="flex uppercase font-light md:mx-24 mx-8 py-24">
         <div className="basis-1/2 flex flex-col justify-between">
-          <div className="title secondaryColor md:text-3xl text-xl pb-2">
+          <div className="title secondaryColor uppercase font-extralight tracking-widest md:text-4xl text-base pb-2">
             Get in Touch
           </div>
           <div className="md:text-sm text-[10px] pb-2 font-thin tracking-wide">
@@ -18,7 +19,7 @@ export default function Footer() {
           />
         </div>
         <div className="basis-1/2 flex flex-col items-end justify-evenly">
-          <div className="title secondaryColor md:text-3xl text-xl pb-2">
+          <div className="title secondaryColor uppercase font-extralight tracking-widest md:text-4xl text-base pb-2">
             Connect
           </div>
           <div className="md:text-sm text-[10px] pb-2 text-right font-thin tracking-wide">
@@ -31,18 +32,24 @@ export default function Footer() {
               href="https://www.facebook.com/Ellis-Custom-Homes-LLC-101821225837600/"
               target="_blank"
             >
-              <img className="md:h-7 h-5 pr-2" src="facebook_logo.png" />
+              <img
+                className="md:h-7 h-5 pr-2 opacity-75 hover:opacity-100"
+                src="facebook_logo.png"
+              />
             </a>
             <a
               href="http://www.houzz.com/pro/elliscustomhomesllc"
               target="_blank"
             >
-              <img className="md:h-7 h-5" src="houzz_logo.png" />
+              <img
+                className="md:h-7 h-5 opacity-75 hover:opacity-100"
+                src="houzz_logo.png"
+              />
             </a>
           </div>
         </div>
       </div>
-      <div className="font-thin text-[10px] w-full md:mx-24 mx-4 pb-[20px] tracking-wide">
+      <div className="font-thin text-[10px] md:mx-24 mx-4 pb-[20px] tracking-wide">
         © Ellis Custom Homes. Site by{" "}
         <a
           className="underline decoration-from-font"

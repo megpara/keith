@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --title-font-family: kings-caslon-display, serif;
+  --title-font-family: freight-big-pro, serif;
 }
 html,
 body {
@@ -12,6 +12,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-family: "Avenir Next", sans-serif;
+  cursor: default;
 }
 
 a {
@@ -34,28 +35,40 @@ a {
 }
 
 .primaryTitle {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: white;
   letter-spacing: 0.09em;
+}
+
+.primaryColor {
+  color: #544953;
 }
 
 .secondaryColor {
   color: #bab0b0;
 }
 
-.secondaryTitle {
-  font-size: 2.5rem;
+.paragraph {
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 0.03em;
 }
 
-.paragraph {
-  font-weight: 200;
+.paragraphTitle {
+  font-size: 2.8rem;
+  color: #bab0b0;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 640px) {
   .primaryTitle {
-    font-size: 36px;
+    font-size: 42px;
   }
-  .secondaryTitle {
-    font-size: 24px;
+  .paragraphTitle {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .paragraph {
+    font-size: 1rem;
   }
 }

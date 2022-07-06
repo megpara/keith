@@ -1,3 +1,3 @@
 export default function Paragraph({ children }) {
-  return <div className="md:m-32 mx-8 m-16">{children}</div>;
+  return <div className="md:px-36 md:py-28 px-6 py-16">{children}</div>;
 }
