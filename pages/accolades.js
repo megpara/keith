@@ -38,10 +38,10 @@ export default function Accolades() {
         />
         <ImageBorder />
         <div className="absolute flex top-0 left-0 w-full h-full flex-col justify-center text-center text-white">
-          <div className=" title primaryTitle">
+          <div className="title paragraphTitle !text-white">
             "We are beyond pleased with our new home."
           </div>
-          <div className="md:text-sm text-[7px] uppercase tracking-[0.4em] text-center pb-24">
+          <div className="md:text-sm text-[7px] uppercase tracking-[0.4em] text-center">
             Carrie & Sue Ellen Bass, Customers
           </div>
         </div>

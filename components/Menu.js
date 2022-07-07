@@ -56,7 +56,7 @@ export default function Menu({ open, toggle }) {
                         Company
                       </div>
                     </Link>
-                    <Link href="/">
+                    <Link href="/team">
                       <div className="cursor-pointer hover:after:content-['-']">
                         Team
                       </div>
