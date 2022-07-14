@@ -19,7 +19,7 @@ export default function Company() {
       <Title>Company</Title>
       <Paragraph>
         <div className="title paragraphTitle">
-          Building exquisite custom homes for almost 30 years
+          Exquisite custom homes for almost 30 years
         </div>
         <div className="paragraph pb-8">
           Some of the finest homes in the Brazos Valley exist because of the

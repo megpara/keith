@@ -3,13 +3,13 @@ import PrimaryButton from "./ButtonPrimary";
 export default function Footer() {
   return (
     <footer>
-      {/* <footer className="bg-[#f8f7f6]"> */}
-      <div className="flex uppercase font-light md:mx-24 mx-8 py-24">
+      {/* <footer className="bg-[#544953]"> */}
+      <div className="flex font-light md:mx-24 mx-8 py-24">
         <div className="basis-1/2 flex flex-col justify-between">
           <div className="title secondaryColor uppercase font-extralight tracking-widest md:text-4xl text-base pb-2">
             Get in Touch
           </div>
-          <div className="md:text-sm text-[10px] pb-2 font-thin tracking-wide">
+          <div className="text-base font-thin pb-2">
             <div>Phone: 979-695-8394</div>
             <div>Fax: 979-764-7999</div>
           </div>
@@ -22,10 +22,10 @@ export default function Footer() {
           <div className="title secondaryColor uppercase font-extralight tracking-widest md:text-4xl text-base pb-2">
             Connect
           </div>
-          <div className="md:text-sm text-[10px] pb-2 text-right font-thin tracking-wide">
-            <div>4500 Carter Creek Pkwy</div>
-            <div>Suite 106</div>
-            <div>Bryan, Tx 77802</div>
+          <div className="text-base font-thin pb-2 text-right">
+            <div>118 S. Main Street</div>
+            <div>Suite A</div>
+            <div>Bryan, TX 77803</div>
           </div>
           <div className="flex">
             <a

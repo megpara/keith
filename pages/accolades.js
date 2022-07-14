@@ -7,9 +7,18 @@ import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 
 const quotes = [
-  { text: "hi", name: "susan" },
-  { text: "hi", name: "susan" },
-  { text: "hi", name: "susan" },
+  {
+    text: "“Keith Ellis and his company ‘family’ were a pleasure to work with in every aspect of the home building process. From the relationship with our architect, to the materials selection process, to the unique creativity and attention to detail, the process was quite effortless for us and the end result is a stunning and magnificent home.”",
+    name: "The Batchelders, customers",
+  },
+  {
+    text: "“I recently worked with Project Manager, Andrew Colson, to install a custom motorized shade system for their project in Boerne, TX. Andrew was helpful in making selections and working with us and the client to select the right product to mitigate the sun/heat/glare/insects for a large sliding door system in the home. The high-quality design and craftsmanship of the custom home called for a totally custom product to provide further functionality for the focal door system.”",
+    name: "Texas Sun & Shade, subcontractor",
+  },
+  {
+    text: "“What a week we recently experienced. We were mostly without power for two days until we got our generator working again (bad battery). Yet we had no frozen pipes, no damage to our tankless water heaters, an inside temperature that did not plummet, etc. Bill and I are so grateful for the planning and construction of our home that brought last week’s results. You two and the myriad of workers around you are the greatest. Thank you.”",
+    name: "Marilyn Byrne, customer",
+  },
 ];
 
 export default function Accolades() {
@@ -18,17 +27,22 @@ export default function Accolades() {
       <Header />
       <div className="relative h-[75vh]">
         <img
-          className="brightness-[0.65] h-[75vh] w-full object-cover"
-          src="dining.jpeg"
+          className="brightness-75 h-[75vh] w-full object-cover object-top"
+          src="Indian-Lakes-1_backyard-1.jpeg"
         />
         <ImageBorderSmall />
       </div>
       <Title>Accolades</Title>
       <Paragraph>
-        <div className="md:text-sm text-[7px] uppercase tracking-[0.4em] text-center pb-24">
+        <div className="preTitle !pb-24 !text-center">
           Love from our valued clients
         </div>
-        <div className="paragraph pb-8">Quote</div>
+        <div className="paragraph pb-8">
+          “Everyone we worked with at Ellis Custom Homes was a delight. They
+          work together as a team...more as a family. Above all, Keith Ellis, is
+          a man of great integrity whom I admire and have the utmost trust in. I
+          know that he will stand by whatever he says.”
+        </div>
         <div className="title paragraphTitle">Susan McElroy, Customer</div>
       </Paragraph>
       <div className="relative h-[100vh]">
@@ -48,10 +62,10 @@ export default function Accolades() {
       </div>
       <Paragraph>
         {quotes.map((quote) => (
-          <>
+          <div className="pb-8">
             <div className="paragraph pb-8">{quote.text}</div>
             <div className="title paragraphTitle">{quote.name}</div>
-          </>
+          </div>
         ))}
       </Paragraph>
       <Footer />

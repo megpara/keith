@@ -25,15 +25,19 @@ export default function Team() {
         />
         <ImageBorderSmall />
       </div>
+      <Title>Team</Title>
       <Paragraph>
         <div className="title paragraphTitle">Meet our experts</div>
-        <div className="paragraph"></div>
+        <div className="paragraph">
+          At Ellis Custom Homes, we are fully dedicated to meeting the needs of
+          our customers. Our team works as a family to ensure each home is
+          crafted to its unique perfection.
+        </div>
       </Paragraph>
-      <Title>Team</Title>
       <div className="grid grid-cols-3 gap-4 mr-4 ml-4">
         {employees.map((employee) => (
           <div className="bg-[#544953] text-white h-[400px] flex flex-col justify-center text-center">
-            <div className="title text-5xl">{employee.name}</div>
+            <div className="title text-5xl pb-2">{employee.name}</div>
             <div className="paragraph">{employee.title}</div>
           </div>
         ))}

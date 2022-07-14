@@ -10,7 +10,7 @@ export default function Menu({ open, toggle }) {
           animate={{
             width: "100%",
             opacity: 1,
-            transition: { duration: 0.5 },
+            transition: { duration: 1 },
           }}
           exit={{
             width: 0,
@@ -26,10 +26,10 @@ export default function Menu({ open, toggle }) {
                 transition={{ ease: "easeIn", duration: "2" }}
               >
                 <button
-                  className="primaryColor absolute right-0 md:mt-10 md:mr-8 mt-8 mr-8 text-2xl font-thin"
+                  className="primaryColor absolute right-0 md:mt-10 md:mr-8 mt-8 mr-8 text-[9px] uppercase tracking-[0.4em] hover:tracking-[0.7em] duration-700"
                   onClick={toggle}
                 >
-                  X
+                  close
                 </button>
               </motion.div>
             </AnimatePresence>
@@ -41,12 +41,12 @@ export default function Menu({ open, toggle }) {
                   transition={{ ease: "easeIn", duration: "2" }}
                 >
                   <div className="title primaryTitle primaryColor text-right flex flex-col justify-evenly">
-                    <Link href="/">
-                      <div className="cursor-pointer hover:after:content-['-']">
+                    <Link href="/gallery">
+                      <div className="cursor-pointer hover:after:content-['-'] transition-all duration-700">
                         Gallery
                       </div>
                     </Link>
-                    <Link href="/">
+                    <Link href="/services">
                       <div className="cursor-pointer hover:after:content-['-']">
                         Services
                       </div>
