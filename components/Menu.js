@@ -5,7 +5,7 @@ export default function Menu({ open, toggle }) {
   return (
     <AnimatePresence>
       {open && (
-        <motion.aside
+        <motion.div
           initial={{ width: 0, opacity: 0 }}
           animate={{
             width: "100%",
@@ -17,8 +17,10 @@ export default function Menu({ open, toggle }) {
             opacity: 0,
             transition: { duration: 1 },
           }}
+          className="fixed top-0 left-0 md:relative"
+          id="menu-container"
         >
-          <div className="bg-[#f8f7f6] fixed top-0 w-[50%] h-screen opacity-95">
+          <div className="bg-[#f8f7f6] fixed top-0 w-full sm:w-[50%] h-screen opacity-95">
             <AnimatePresence>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -42,7 +44,7 @@ export default function Menu({ open, toggle }) {
                 >
                   <div className="title primaryTitle primaryColor text-right flex flex-col justify-evenly">
                     <Link href="/gallery">
-                      <div className="cursor-pointer hover:after:content-['-'] transition-all duration-700">
+                      <div className="cursor-pointer hover:after:content-['-']">
                         Gallery
                       </div>
                     </Link>
@@ -71,7 +73,7 @@ export default function Menu({ open, toggle }) {
               </AnimatePresence>
             </div>
           </div>
-        </motion.aside>
+        </motion.div>
       )}
     </AnimatePresence>
   );

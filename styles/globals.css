@@ -58,6 +58,10 @@ a {
   letter-spacing: 0.01em;
 }
 
+.paragraphSmall {
+  font-size: 0.9rem;
+}
+
 .paragraphTitle {
   font-size: 2.8rem;
   color: #8a8181;
@@ -70,7 +74,6 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.7em;
   color: #8a8181;
-  /* font-weight: 100; */
   padding-bottom: 0.5rem;
 }
 

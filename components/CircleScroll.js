@@ -18,12 +18,12 @@ export const CircleIndicator = () => {
     <>
       {!isComplete && (
         <svg
-          className="fixed bottom-[0] left-[50%] ml-[-40px] w-[80px] h-[80px] z-10"
+          className="fixed bottom-[0px] left-[30px] w-[80px] h-[80px] z-10"
           viewBox="0 0 60 60"
         >
           <motion.path
             fill="none"
-            strokeWidth="3"
+            strokeWidth="2"
             stroke="#bab0b0"
             strokeDasharray="0 1"
             d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
@@ -47,7 +47,7 @@ export const CircleIndicator = () => {
           <text
             x="10"
             y="27"
-            className="text-[7px] fill-[#bab0b0] uppercase tracking-widest font-semibold"
+            className="text-[5.5px] uppercase tracking-[0.35em] fill-[#bab0b0]"
           >
             scroll
           </text>

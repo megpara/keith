@@ -1,3 +1,4 @@
+import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ImageBorderSmall from "../components/ImageBorderSmall";
@@ -9,6 +10,9 @@ export default function Company() {
   return (
     <Layout>
       <Header />
+      <div className="md:visible invisible">
+        <CircleIndicator />
+      </div>
       <div className="relative h-[75vh]">
         <img
           className="brightness-75 h-[75vh] w-full object-cover"

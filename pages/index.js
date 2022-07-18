@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import SecondaryButton from "../components/ButtonSecondary";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
@@ -50,17 +51,15 @@ export default function Home() {
           <div className={styles.pBackground}>
             <div className="md:px-36 md:py-48 px-8 py-16">
               <div className="preTitle">Premium Custom</div>
-              <div className="title paragraphTitle !text-7xl">Homebuilding</div>
+              <div className="title paragraphTitle sm:!text-7xl">
+                Homebuilding
+              </div>
               <div className="paragraph">
                 Ellis Custom Homes is a highly skilled team of individuals with
                 almost 30 years of excellence in our field. Each of our custom
                 homes is constructed with spectacular attention to detail and
                 one-of-a-kind workmanship.
               </div>
-              <div
-                class="rightquote-bg rightframe-bg"
-                style={{ transform: "matrix(1, 0, 0, 1, 0, -52.7344);" }}
-              ></div>
             </div>
           </div>
         </motion.div>
@@ -84,7 +83,7 @@ export default function Home() {
         </div> */}
         <ImageBorder />
         <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
-          <SecondaryButton title="Featured Projects" />
+          <SecondaryButton title="Featured Projects" link="/gallery" />
         </div>
       </div>
       <Footer />
