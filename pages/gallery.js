@@ -39,7 +39,9 @@ export default function Gallery({ images }) {
             {/* <div>{image.room}</div> */}
             <img src={image.url} className="brightness-75" />
             <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
-              <SecondaryButton title={image.project} link="" />
+              <SecondaryButton>
+                <div>{image.project}</div>
+              </SecondaryButton>
             </div>
           </div>
         ))}

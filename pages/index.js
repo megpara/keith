@@ -83,7 +83,9 @@ export default function Home() {
         </div> */}
         <ImageBorder />
         <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
-          <SecondaryButton title="Featured Projects" link="/gallery" />
+          <SecondaryButton>
+            <Link href="/gallery">Featured Projects</Link>
+          </SecondaryButton>
         </div>
       </div>
       <Footer />
