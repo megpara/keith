@@ -67,7 +67,7 @@ export default function Team() {
             <button onClick={() => openModal(index)}>
               <div
                 key={index}
-                className="bg-[#544953] text-white h-[400px] flex flex-col justify-center text-center p-4"
+                className="bg-[#544953] text-white aspect-square flex flex-col justify-center text-center p-4"
               >
                 <div className="title text-5xl pb-2">{employee.name}</div>{" "}
                 <div className="paragraph">{employee.title}</div>

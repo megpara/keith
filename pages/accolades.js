@@ -66,7 +66,7 @@ export default function Accolades() {
       </div>
       <Paragraph>
         {quotes.map((quote) => (
-          <div className="pb-8">
+          <div className="pb-8" key={quote.name}>
             <div className="paragraph pb-8">{quote.text}</div>
             <div className="title paragraphTitle">{quote.name}</div>
           </div>

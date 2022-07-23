@@ -22,9 +22,9 @@ class Contentful {
       .getEntries({ content_type: this.contentTypes.images })
       .then((entry) => {
         return entry.items.map((entry) => {
-          const { room, project, image } = entry.fields;
+          const { room, project, image, primaryImage } = entry.fields;
 
-          return { room, project, url: this._getImageUrl(image) };
+          return { room, project, url: this._getImageUrl(image), primaryImage };
         });
         // .sort((a, b) => new Date(a.time) - new Date(b.time));
       });
