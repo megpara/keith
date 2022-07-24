@@ -21,15 +21,15 @@ export default function Services() {
         <ImageBorderSmall />
       </div>
       <Title>Services</Title>
-      <div className="grid md:grid-cols-2 md:gap-48 gap-24 px-4 py-28">
-        <div className="flex flex-col justify-center md:items-end items-center">
+      <div className="grid lg:grid-cols-2 lg:gap-48 gap-24 px-4 py-28">
+        <div className="flex flex-col justify-center lg:items-end items-center">
           <img
             className="w-3/4 object-cover object-right brightness-75"
             src="36442FSalzer.jpg"
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="flex md:mr-36 md:ml-0 mx-4">
+          <div className="flex lg:mr-36 lg:ml-0 mx-4">
             <div className="text-[9px] uppercase tracking-[0.4em] w-fit text-right text-[#8a8181]">
               01
             </div>
@@ -50,10 +50,10 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="md:border-none border-t-[0.1px] mx-12" />
-      <div className="grid md:grid-cols-2 md:gap-48 gap-24 px-4 py-28">
+      <div className="lg:border-none border-t-[0.1px] mx-12" />
+      <div className="grid lg:grid-cols-2 lg:gap-48 gap-24 px-4 py-28">
         <div className="flex flex-col justify-center">
-          <div className="flex md:ml-36 md:mr-0 mx-4">
+          <div className="flex lg:ml-36 lg:mr-0 mx-4">
             <div className="text-[9px] uppercase tracking-[0.4em] w-fit text-[#8a8181]">
               02
             </div>
@@ -80,16 +80,16 @@ export default function Services() {
           />
         </div>
       </div>
-      <div className="md:border-none border-t-[0.1px] mx-12" />
-      <div className="grid md:grid-cols-2 md:gap-48 gap-24 px-4 py-28">
-        <div className="flex flex-col justify-center md:items-end items-center">
+      <div className="lg:border-none border-t-[0.1px] mx-12" />
+      <div className="grid lg:grid-cols-2 lg:gap-48 gap-24 px-4 py-28">
+        <div className="flex flex-col justify-center lg:items-end items-center">
           <img
             className="w-5/6 object-cover brightness-75"
             src="ECH2015TR_004.jpg"
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="flex md:mr-36 md:ml-0 mx-4">
+          <div className="flex lg:mr-36 lg:ml-0 mx-4">
             <div className="text-[9px] uppercase tracking-[0.4em] w-fit text-right text-[#8a8181]">
               03
             </div>

@@ -35,7 +35,7 @@ export default function Home() {
                 Est 1990
               </div>
               <div className="title primaryTitle">Ellis Custom Homes</div>
-              <div className="text-white md:text-sm text-[7px] uppercase tracking-[0.4em]">
+              <div className="preTitle !text-white">
                 Quality construction | Exceptional service
               </div>
             </div>

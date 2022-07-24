@@ -84,7 +84,7 @@ export default function Gallery({ images, projects, rooms }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: "0.3" }}
-            className="absolute w-1/6 right-4 py-4 px-8 z-10 bg-white border-[0.5px] border-[#bab0b0]"
+            className="absolute md:w-1/6 w-1/2 right-4 py-4 px-8 z-10 bg-white border-[0.5px] border-[#bab0b0]"
           >
             {roomKeys.map((room) => (
               <button
@@ -98,7 +98,10 @@ export default function Gallery({ images, projects, rooms }) {
         )}
       </AnimatePresence>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mr-4 ml-4">
+      <motion.div
+        layout
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mr-4 ml-4"
+      >
         {!roomFilter
           ? projectKeys.map((projectKey) => (
               <Project
@@ -115,7 +118,7 @@ export default function Gallery({ images, projects, rooms }) {
                 />
               </div>
             ))}
-      </div>
+      </motion.div>
 
       <Footer />
     </Layout>

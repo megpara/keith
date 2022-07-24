@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Menu({ open, toggle }) {
   const menuWidth = () => {
-    if (window.innerWidth < 640) {
+    if (window.innerWidth < 768) {
       return "100%";
     } else {
       return "50%";
@@ -34,7 +34,7 @@ export default function Menu({ open, toggle }) {
               transition={{ ease: "easeIn", duration: "2" }}
             >
               <button
-                className="primaryColor absolute right-0 md:mt-10 md:mr-8 mt-8 mr-8 text-[9px] uppercase tracking-[0.4em] hover:tracking-[0.7em] duration-700"
+                className="primaryColor absolute right-0 m-10 text-[9px] uppercase tracking-[0.4em] hover:tracking-[0.7em] duration-700"
                 onClick={toggle}
               >
                 close

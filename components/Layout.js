@@ -1,4 +1,5 @@
 import Head from "next/head";
+import "@splidejs/react-splide/css";
 
 export default function Layout({ children }) {
   return (

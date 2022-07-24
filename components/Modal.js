@@ -27,7 +27,7 @@ export default function Modal({ open, closeModal, children }) {
           animate="visible"
           exit="hidden"
           variants={overlayVariants}
-          className="fixed top-0 right-0 left-0 bottom-0 flex bg-[#0000001a] items-center justify-center"
+          className="fixed top-0 right-0 left-0 bottom-0 flex bg-[#0000001a] items-center justify-center z-10"
         >
           <div
             className="absolute w-full h-full top-0"
