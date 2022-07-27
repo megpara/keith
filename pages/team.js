@@ -12,16 +12,49 @@ const employees = [
   {
     name: "Keith Ellis",
     title: "Founder & Owner",
-    bio: "With more than two decades of experience in custom home building, Keith brings his own personal wealth of in-depth knowledge and expertise, along with his handpicked team of highly qualified craftspeople, to every Ellis Custom Home. A College Station native, Keith’s innovative and creative vision, coupled with his meticulous dedication to customer service, has resulted in some of the finest homes in the Brazos Valley. Keith has a keen understanding that clients are not just looking to build a home. They are building a lifestyle for themselves and their families. No matter the size of the project, Keith’s dedication to exceeding expectations extends to every aspect of the homebuilding process. In fact, he personally handles all areas of project management, client consultation, project estimation, scheduling of trade contractors and acquisition of materials. Keith founded Ellis Custom Homes in 1990. After five years serving clients in Houston, he moved the company back to his hometown of Bryan/College Station where he has built an impeccable reputation for quality, custom construction. An industry leader, Keith is a member of the National Association of Home Builders (NAHB) as well as a member of one of the NAHB’s Builder 20 groups. He is a past president and current builder director of the Bryan/College Station Home Builders Association as well as life director of the Texas Association of Builders. Keith earned his B.S. in Building Construction from Texas A&M University in 1988.",
+    bio: [
+      "With more than two decades of experience in custom home building, Keith brings his own personal wealth of in-depth knowledge and expertise, along with his handpicked team of highly qualified craftspeople, to every Ellis Custom Home. A College Station native, Keith’s innovative and creative vision, coupled with his meticulous dedication to customer service, has resulted in some of the finest homes in the Brazos Valley.",
+      "Keith has a keen understanding that clients are not just looking to build a home. They are building a lifestyle for themselves and their families. No matter the size of the project, Keith’s dedication to exceeding expectations extends to every aspect of the homebuilding process. In fact, he personally handles all areas of project management, client consultation, project estimation, scheduling of trade contractors and acquisition of materials.",
+      "Keith founded Ellis Custom Homes in 1990. After five years serving clients in Houston, he moved the company back to his hometown of Bryan/College Station where he has built an impeccable reputation for quality, custom construction.",
+      "An industry leader, Keith is a member of the National Association of Home Builders (NAHB) as well as a member of one of the NAHB’s Builder 20 groups. He is a past president and current builder director of the Bryan/College Station Home Builders Association as well as life director of the Texas Association of Builders. Keith earned his B.S. in Building Construction from Texas A&M University in 1988.",
+      "When he’s not working, Keith loves to give back and volunteers his time with 4H Youth in Shotgun Education. One of his bucket list dreams is to build a church. Keith is married with 3 children.",
+    ],
   },
   {
     name: "Mark Ward",
     title: "Project Manager",
-    bio: "Mark joined Ellis Custom Homes in April 2014 and provides an exceptional working knowledge of construction gained over the past 30 years to our team. Prior to joining our firm, he spent many years in the commercial construction world. In fact, Mark had a part in most of the structures built over the past 20 years on the Texas A&M campus. Mark enjoys working with clients and ensuring that each project receives the highest level of attention to detail. He brings his core values of integrity, teamwork and dedication to constant improvement to his work, and these values shine through in every custom home project he manages. As a result of working with Mark, clients benefit from his key strength of keeping projects on schedule, as well as his philosophy that every project has its own character and every client has their own thought process and communication style. He is very flexible and able to adapt to individual client needs, while maintaining an efficient and effective building plan and timeline.",
+    bio: [
+      "Mark joined Ellis Custom Homes in April 2014 and provides an exceptional working knowledge of construction gained over the past 30 years to our team. Prior to joining our firm, he spent many years in the commercial construction world. In fact, Mark had a part in most of the structures built over the past 20 years on the Texas A&M campus.",
+      "Mark enjoys working with clients and ensuring that each project receives the highest level of attention to detail. He brings his core values of integrity, teamwork and dedication to constant improvement to his work, and these values shine through in every custom home project he manages. As a result of working with Mark, clients benefit from his key strength of keeping projects on schedule, as well as his philosophy that every project has its own character and every client has their own thought process and communication style. He is very flexible and able to adapt to individual client needs, while maintaining an efficient and effective building plan and timeline.",
+      "In his free time, Mark enjoys traveling and exploring places he has never been before without an agenda—simply being open to possibilities and discovering the unexpected. His hobbies include playing golf, horseback riding and listening to jazz music with a good glass of wine. Mark is married with two sons and can be found some weekends working on his land in Fredericksburg.",
+    ],
   },
-  { name: "Jennifer Moore", title: "Office Manager" },
-  { name: "Daniel Pena", title: "Estimator" },
-  { name: "Melissa Gutierrez-Ortiz", title: "Accounting" },
+  {
+    name: "Jennifer Moore",
+    title: "Office Manager",
+    bio: [
+      "Jennifer has been working for custom homebuilders in the Brazos Valley since 2002 and joined the Ellis Custom Homes team in September of 2009. Jennifer oversees all aspects of operating the corporate office. Her wealth of industry knowledge and extensive managerial experience allow her to efficiently coordinate multiple aspects of the custom home building process and ensure all of our clients receive five-star service.",
+      "Jennifer works closely with every member of the Ellis Custom Homes’ team, as well as interacts and provides personal attention to each client. She handles all areas of marketing, manages the website, and assists clients with research into various options for their new homes. She also deals with contracts, bids, budgets and scheduling—just to name a few of her many contributions.",
+      "Her dedication to honestly, integrity and being a team player are infused in everything she does. One of her strengths she has mastered along her impressive career is her ability to be solution focused. If an issue arises, Jennifer will make it her mission to find the best solution or answer for our clients.",
+      "Jennifer is a graduate from Sam Houston State University where she earned a B.S. in Interior Design in May 2005. She is married with two sons and enjoys spending time with her family—especially behind the lens of her camera as a photographer. Her dedication to customer service traces back to her very first job in Houston where she spent six years working at Astroworld.",
+    ],
+  },
+  {
+    name: "Daniel Pena",
+    title: "Estimator",
+    bio: [
+      "Daniel has been working in the construction industry since 2014 and has both commercial and residential experience. He joined Ellis Custom Homes in September of 2018 and brought with him his strong sense of faith, honesty and hard work. Daniel is known for his acute attention to details, his excellent communication skills and his proactive approach to getting things accomplished.",
+      "He earned his Associate’s Degree from TSTC in Building Construction Technology. His interests include reading, writing, photography/videography, camping, hiking, fishing, dancing, listening to music, playing with his dogs and just about any outdoor activity. He makes a practice of buying American-made products whenever possible. Daniel has an interesting background and was a bullfighter for a few years—where he had to develop precision, quick thinking and proactive decision-making.",
+    ],
+  },
+  {
+    name: "Melissa Gutierrez-Ortiz",
+    title: "Accounting",
+    bio: [
+      "Melissa joined the Ellis Custom Homes team in June 2017 and manages accounts payable and receivable for the firm. Additionally, she handles the company’s business financial matters and coordinates all areas of insurance for the entire building process. Melissa brings a sense of responsibility, honesty and integrity to her work and is always strategizing to find the best possible solutions for the business as well as our clients. She is an expert at time management and is always helping her co-workers whenever possible.",
+      "Melissa graduated from Stephen F. Austin State University where she earned her degree in Business Administration in December 2016. In her free time, she enjoys playing Sudoku, crafting, hand-making soaps, using Apple technology and is an avid fan of action movies. She enjoys spending time with her family and dogs and can’t pass up any colorful office supplies at the store! She practices an attitude of gratitude in her life on a daily basis.",
+    ],
+  },
 ];
 
 let modalIndex = 0;
@@ -79,7 +112,9 @@ export default function Team() {
                 {employee.name}
               </div>
               <div className="paragraph paragraphSmall max-h-[50vh] overflow-scroll">
-                {employee.bio}
+                {employee.bio.map((paragraph) => (
+                  <div className="pb-4">{paragraph}</div>
+                ))}
               </div>
             </Modal>
           </>

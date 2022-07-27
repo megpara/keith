@@ -47,6 +47,11 @@ export default function Menu({ open, toggle }) {
                 transition={{ ease: "easeIn", duration: "2" }}
               >
                 <div className="title primaryTitle primaryColor text-right flex flex-col justify-evenly">
+                  <Link href="/">
+                    <div className="cursor-pointer hover:after:content-['-']">
+                      Home
+                    </div>
+                  </Link>
                   <Link href="/gallery">
                     <div className="cursor-pointer hover:after:content-['-']">
                       Gallery

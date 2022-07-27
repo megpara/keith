@@ -41,7 +41,7 @@ export default function Modal({ open, closeModal, children }) {
             transition={{ duration: 0.5 }}
           >
             <button
-              className="primaryColor absolute right-4 top-4 text-[9px] uppercase tracking-[0.4em] hover:tracking-[0.7em] duration-700"
+              className="primaryColor absolute md:right-8 md:top-8 right-4 top-4 text-[9px] uppercase tracking-[0.4em] hover:tracking-[0.7em] duration-700"
               onClick={closeModal}
             >
               close

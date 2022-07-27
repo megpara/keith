@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -30,22 +31,22 @@ export default function Services() {
         </div>
         <div className="flex flex-col justify-center">
           <div className="flex lg:mr-36 lg:ml-0 mx-4">
-            <div className="text-[9px] uppercase tracking-[0.4em] w-fit text-right text-[#8a8181]">
+            <div className="text-xs uppercase tracking-[0.4em] w-fit text-right text-[#8a8181]">
               01
             </div>
             <div className="w-full">
               <div className="title paragraphTitle">Design</div>
-              <div className="paragraph paragraphSmall">
-                Residential projects are where our business began 12 years ago.
-                Since then, we’ve delivered to exacting requirements at some of
-                the most prestigious addresses in London and the southern
-                counties. We understand that when you deal with a person’s home,
-                it’s different. Owners are invested in their dream both
-                financially and emotionally. This journey matters. By constantly
-                improving it, we’re able to minimise stress, allowing you to
-                enjoy what should be one of the most exciting times in your
-                life.
+              <div className="paragraph pb-4">
+                Ellis Custom Homes handles design with artistry and care,
+                anticipating the unique needs of each client. All projects
+                include in-depth client communication as well as high quality
+                documentation.
               </div>
+              <Link href="/gallery">
+                <div className="text-xs underline underline-offset-4 decoration-[0.5px]">
+                  View projects
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -54,22 +55,21 @@ export default function Services() {
       <div className="grid lg:grid-cols-2 lg:gap-48 gap-24 px-4 py-28">
         <div className="flex flex-col justify-center">
           <div className="flex lg:ml-36 lg:mr-0 mx-4">
-            <div className="text-[9px] uppercase tracking-[0.4em] w-fit text-[#8a8181]">
+            <div className="text-xs uppercase tracking-[0.4em] w-fit text-[#8a8181]">
               02
             </div>
             <div className="w-full">
               <div className="title paragraphTitle">Construction</div>
-              <div className="paragraph paragraphSmall">
-                Residential projects are where our business began 12 years ago.
-                Since then, we’ve delivered to exacting requirements at some of
-                the most prestigious addresses in London and the southern
-                counties. We understand that when you deal with a person’s home,
-                it’s different. Owners are invested in their dream both
-                financially and emotionally. This journey matters. By constantly
-                improving it, we’re able to minimise stress, allowing you to
-                enjoy what should be one of the most exciting times in your
-                life.
+              <div className="paragraph pb-4">
+                Building a home is no small feat. Ellis Custom Homes ensures
+                that each project is completed with the finest materials and
+                acute attention to the principles of architecture and design.
               </div>
+              <Link href="/gallery">
+                <div className="text-xs underline underline-offset-4 decoration-[0.5px]">
+                  View projects
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -90,22 +90,20 @@ export default function Services() {
         </div>
         <div className="flex flex-col justify-center">
           <div className="flex lg:mr-36 lg:ml-0 mx-4">
-            <div className="text-[9px] uppercase tracking-[0.4em] w-fit text-right text-[#8a8181]">
+            <div className="text-xs uppercase tracking-[0.4em] w-fit text-right text-[#8a8181]">
               03
             </div>
             <div className="w-full">
               <div className="title paragraphTitle">Remodeling</div>
-              <div className="paragraph paragraphSmall">
-                Residential projects are where our business began 12 years ago.
-                Since then, we’ve delivered to exacting requirements at some of
-                the most prestigious addresses in London and the southern
-                counties. We understand that when you deal with a person’s home,
-                it’s different. Owners are invested in their dream both
-                financially and emotionally. This journey matters. By constantly
-                improving it, we’re able to minimise stress, allowing you to
-                enjoy what should be one of the most exciting times in your
-                life.
+              <div className="paragraph pb-4">
+                Ellis Custom Homes has elevated existing homes for a multitude
+                of clients with the utmost respect for budget and timeline.
               </div>
+              <Link href="/gallery">
+                <div className="text-xs underline underline-offset-4 decoration-[0.5px]">
+                  View projects
+                </div>
+              </Link>
             </div>
           </div>
         </div>

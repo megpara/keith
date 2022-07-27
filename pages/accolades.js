@@ -39,7 +39,7 @@ export default function Accolades() {
       <Title>Accolades</Title>
       <Paragraph>
         <div className="preTitle !pb-24 !text-center">
-          Love from our valued clients
+          From our valued clients
         </div>
         <div className="paragraph pb-8">
           “Everyone we worked with at Ellis Custom Homes was a delight. They
