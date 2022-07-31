@@ -2,7 +2,7 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { useState } from "react";
 import SecondaryButton from "./ButtonSecondary";
 
-export default function Project({ project, images }) {
+export default function Project({ project, setFilter, images }) {
   const [splideOpen, setSplideOpen] = useState(false);
   const imagesPerPage = () => {
     if (window.innerWidth < 640) {
@@ -24,7 +24,7 @@ export default function Project({ project, images }) {
           className="brightness-75 w-full h-full object-cover"
         />
         <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
-          <button onClick={() => setSplideOpen(!splideOpen)}>
+          <button onClick={setFilter}>
             <SecondaryButton>
               <div>{project}</div>
             </SecondaryButton>

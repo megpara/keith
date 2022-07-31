@@ -1,29 +1,49 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import SecondaryButton from "../components/ButtonSecondary";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ImageBorderSmall from "../components/ImageBorderSmall";
 import Layout from "../components/Layout";
 import Paragraph from "../components/Paragraph";
-import Project from "../components/Project";
 import Title from "../components/Title";
 import Contentful from "../libs/contentful";
 
-export default function Gallery({ images, projects, rooms }) {
-  const projectKeys = Object.keys(projects);
-  const roomKeys = Object.keys(rooms);
+export default function Gallery({ projects, rooms }) {
+  const projectKeys = Object.keys(projects).sort();
+  const roomKeys = Object.keys(rooms).sort();
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [roomFilter, setRoomFilter] = useState(false);
   const [roomImages, setRoomImages] = useState([]);
   const [roomName, setRoomName] = useState("");
 
+  const [projectFilter, setProjectFilter] = useState(false);
+  const [projectImages, setProjectImages] = useState([]);
+
+  const filterByProject = (images) => {
+    setProjectFilter(true);
+    setProjectImages(images);
+  };
+
+  const getPrimaryImage = (images) => {
+    var primary = images.find((image) => {
+      return image.primaryImage;
+    });
+    return primary.url;
+  };
+
   const showRooms = (room) => {
     setRoomFilter(true);
     setDropdownOpen(!dropdownOpen);
     setRoomImages(rooms[room]);
     setRoomName(room);
+  };
+
+  const closeFilters = () => {
+    setProjectFilter(false);
+    setRoomFilter(false);
   };
 
   return (
@@ -52,12 +72,12 @@ export default function Gallery({ images, projects, rooms }) {
       </Paragraph>
       <div className="m-4 flex justify-between">
         <div>
-          {roomFilter && (
+          {(roomFilter || projectFilter) && (
             <button
               className="border-[0.5px] border-black hover:border-white hover:bg-[#bab0b0] duration-700 p-4 text-sm paragraph !text-sm pl-4 hover:text-white"
-              onClick={() => setRoomFilter(false)}
+              onClick={closeFilters}
             >
-              View projects
+              Project list
             </button>
           )}
         </div>
@@ -65,13 +85,13 @@ export default function Gallery({ images, projects, rooms }) {
           className="border-[0.5px] border-black hover:border-white hover:bg-[#bab0b0] duration-700 p-4 text-sm flex group"
           onClick={() => setDropdownOpen(!dropdownOpen)}
         >
-          <button className="h-full">
+          <div className="h-full">
             <div className="flex flex-col justify-between h-[15px] w-[25px]">
               <span className="h-[0.5px] w-full bg-black group-hover:bg-white" />
               <span className="h-[0.5px] w-[60%] group-hover:w-full bg-black group-hover:bg-white" />
               <span className="h-[0.5px] w-[80%] group-hover:w-full bg-black group-hover:bg-white" />
             </div>
-          </button>
+          </div>
           <div className="paragraph !text-sm pl-4 group-hover:text-white">
             {roomFilter ? roomName : "Filter by room"}
           </div>
@@ -102,24 +122,34 @@ export default function Gallery({ images, projects, rooms }) {
         layout
         className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mr-4 ml-4"
       >
-        {!roomFilter
+        {!roomFilter && !projectFilter
           ? projectKeys.map((projectKey) => (
-              <Project
-                key={projectKey}
-                project={projectKey}
-                images={projects[projectKey]}
-              ></Project>
-            ))
-          : roomImages.map((url) => (
-              <div className="relative aspect-square">
+              <div className="relative aspect-square" key={projectKey}>
                 <img
-                  src={url}
+                  src={getPrimaryImage(projects[projectKey])}
                   className="brightness-75 w-full h-full object-cover"
                 />
+                <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
+                  <button onClick={() => filterByProject(projects[projectKey])}>
+                    <SecondaryButton>
+                      <div>{projectKey}</div>
+                    </SecondaryButton>
+                  </button>
+                </div>
+              </div>
+            ))
+          : roomFilter
+          ? roomImages.map((url) => (
+              <div className="relative aspect-square">
+                <img src={url} className="w-full h-full object-cover" />
+              </div>
+            ))
+          : projectImages.map((image) => (
+              <div className="relative aspect-square">
+                <img src={image.url} className="w-full h-full object-cover" />
               </div>
             ))}
       </motion.div>
-
       <Footer />
     </Layout>
   );
@@ -141,10 +171,13 @@ export async function getStaticProps(context) {
 
   const rooms = images.reduce((previousValue, currentValue) => {
     const { room, url } = currentValue;
+    if (currentValue.room === "None") {
+      return previousValue;
+    }
     const previousUrls = previousValue[room] ?? [];
     previousValue[room] = [...previousUrls, url];
     return previousValue;
   }, {});
 
-  return { props: { images, projects, rooms } };
+  return { props: { projects, rooms } };
 }

@@ -25,7 +25,7 @@ export default function Services() {
       <div className="grid lg:grid-cols-2 lg:gap-48 gap-24 px-4 py-28">
         <div className="flex flex-col justify-center lg:items-end items-center">
           <img
-            className="w-3/4 object-cover object-right brightness-75"
+            className="brightness-95 w-3/4 object-cover object-right"
             src="36442FSalzer.jpg"
           />
         </div>
@@ -75,7 +75,7 @@ export default function Services() {
         </div>
         <div className="flex flex-col justify-center">
           <img
-            className="w-full object-contain brightness-75"
+            className="brightness-95 w-full object-contain"
             src="Rural-8_Gallery-035.jpeg"
           />
         </div>
@@ -84,7 +84,7 @@ export default function Services() {
       <div className="grid lg:grid-cols-2 lg:gap-48 gap-24 px-4 py-28">
         <div className="flex flex-col justify-center lg:items-end items-center">
           <img
-            className="w-5/6 object-cover brightness-75"
+            className="brightness-95 w-5/6 object-cover"
             src="ECH2015TR_004.jpg"
           />
         </div>
