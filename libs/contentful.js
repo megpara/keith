@@ -14,7 +14,7 @@ class Contentful {
   }
 
   _getImageUrl(image) {
-    return image.fields.file.url;
+    return `${image.fields.file.url}?fm=avif`;
   }
 
   getAllImages() {
@@ -26,7 +26,6 @@ class Contentful {
 
           return { room, project, url: this._getImageUrl(image), primaryImage };
         });
-        // .sort((a, b) => new Date(a.time) - new Date(b.time));
       });
   }
 }
