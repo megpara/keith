@@ -14,7 +14,7 @@ class Contentful {
   }
 
   _getImageUrl(image) {
-    return `${image.fields.file.url}?fm=avif`;
+    return image.fields.file.url;
   }
 
   getAllImages() {
