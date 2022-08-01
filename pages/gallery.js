@@ -151,7 +151,7 @@ export default function Gallery({ projects, rooms }) {
                   src={image.url}
                   className="w-full h-full object-cover"
                   layout="fill"
-                  load="eager"
+                  // load="eager"
                 />
               </div>
             ))}
