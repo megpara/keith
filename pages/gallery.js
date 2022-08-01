@@ -50,11 +50,11 @@ export default function Gallery({ images, projects, rooms }) {
 
   return (
     <Layout>
-      <Head>
+      {/* <Head>
         {images.map((image) => (
           <link rel="preload" as="image" href={image.url} />
         ))}
-      </Head>
+      </Head> */}
       <Header />
       <div className="md:visible invisible">
         <CircleIndicator />
@@ -157,6 +157,7 @@ export default function Gallery({ images, projects, rooms }) {
                   src={image.url}
                   className="w-full h-full object-cover"
                   layout="fill"
+                  quality={50}
                 />
               </div>
             ))}
