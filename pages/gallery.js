@@ -12,7 +12,7 @@ import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Contentful from "../libs/contentful";
 
-export default function Gallery({ images, projects, rooms }) {
+export default function Gallery({ projects, rooms }) {
   const projectKeys = Object.keys(projects).sort();
   const roomKeys = Object.keys(rooms).sort();
 
@@ -50,11 +50,6 @@ export default function Gallery({ images, projects, rooms }) {
 
   return (
     <Layout>
-      {/* <Head>
-        {images.map((image) => (
-          <link rel="preload" as="image" href={image.url} />
-        ))}
-      </Head> */}
       <Header />
       <div className="md:visible invisible">
         <CircleIndicator />
