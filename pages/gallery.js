@@ -157,7 +157,8 @@ export default function Gallery({ images, projects, rooms }) {
                   src={image.url}
                   className="w-full h-full object-cover"
                   layout="fill"
-                  quality={50}
+                  placeholder="blur"
+                  blurDataURL={image.url}
                 />
               </div>
             ))}
