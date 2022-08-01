@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import SecondaryButton from "../components/ButtonSecondary";
@@ -11,7 +12,7 @@ import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Contentful from "../libs/contentful";
 
-export default function Gallery({ projects, rooms }) {
+export default function Gallery({ images, projects, rooms }) {
   const projectKeys = Object.keys(projects).sort();
   const roomKeys = Object.keys(rooms).sort();
 
@@ -49,6 +50,11 @@ export default function Gallery({ projects, rooms }) {
 
   return (
     <Layout>
+      <Head>
+        {images.map((image) => (
+          <link rel="preload" as="image" href={image.url} />
+        ))}
+      </Head>
       <Header />
       <div className="md:visible invisible">
         <CircleIndicator />
@@ -151,7 +157,6 @@ export default function Gallery({ projects, rooms }) {
                   src={image.url}
                   className="w-full h-full object-cover"
                   layout="fill"
-                  // load="eager"
                 />
               </div>
             ))}
@@ -185,5 +190,5 @@ export async function getStaticProps(context) {
     return previousValue;
   }, {});
 
-  return { props: { projects, rooms } };
+  return { props: { images, projects, rooms } };
 }
