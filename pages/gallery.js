@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import SecondaryButton from "../components/ButtonSecondary";
 import { CircleIndicator } from "../components/CircleScroll";
@@ -146,7 +147,12 @@ export default function Gallery({ projects, rooms }) {
             ))
           : projectImages.map((image) => (
               <div className="relative aspect-square">
-                <img src={image.url} className="w-full h-full object-cover" />
+                <Image
+                  src={image.url}
+                  className="w-full h-full object-cover"
+                  layout="fill"
+                  load="eager"
+                />
               </div>
             ))}
       </motion.div>
@@ -164,7 +170,7 @@ export async function getStaticProps(context) {
     const previousUrls = previousValue[project] ?? [];
     previousValue[project] = [
       ...previousUrls,
-      { url: url, primaryImage: primaryImage },
+      { url: "http:" + url, primaryImage: primaryImage },
     ];
     return previousValue;
   }, {});
@@ -175,7 +181,7 @@ export async function getStaticProps(context) {
       return previousValue;
     }
     const previousUrls = previousValue[room] ?? [];
-    previousValue[room] = [...previousUrls, url];
+    previousValue[room] = [...previousUrls, "http:" + url];
     return previousValue;
   }, {});
 

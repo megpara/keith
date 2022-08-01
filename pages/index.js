@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import SecondaryButton from "../components/ButtonSecondary";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ImageBorder from "../components/ImageBorder";
-import ImageBorderSmall from "../components/ImageBorderSmall";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 
@@ -18,10 +18,12 @@ export default function Home() {
       <div className="md:visible invisible">
         <CircleIndicator />
       </div>
-      <div className="relative h-screen">
-        <img
-          className="brightness-75 h-screen w-full object-cover"
-          src="Davis.jpeg"
+      <div className="relative h-screen w-full">
+        <Image
+          className="brightness-75 object-cover"
+          src="/Davis.jpeg"
+          layout="fill"
+          priority
         />
         <ImageBorder />
         <AnimatePresence>
@@ -64,23 +66,14 @@ export default function Home() {
           </div>
         </motion.div>
       </AnimatePresence>
-      <div className="relative h-[100vh]">
-        <img
-          className="brightness-75 h-[100vh] w-full object-cover"
-          src="Houston-1_12.jpeg"
+      <div className="relative h-[100vh] w-full">
+        <Image
+          className="brightness-75"
+          src="/Houston-1_12.jpeg"
+          layout="fill"
+          priority
+          objectFit="cover"
         />
-        {/* <div
-          className="bg-[#544953] z-10 text-white absolute right-0 top-[50%] h-[70px] w-[50px] mt-[-35px] flex items-center justify-center text-2xl opacity-90"
-          onClick={() => paginate(1)}
-        >
-          <div>{"→"}</div>
-        </div>
-        <div
-          className="bg-[#544953] z-10 text-white absolute top-[50%] h-[70px] w-[50px] mt-[-35px] flex items-center justify-center text-2xl opacity-90"
-          onClick={() => paginate(1)}
-        >
-          <div>{"←"}</div>
-        </div> */}
         <ImageBorder />
         <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
           <SecondaryButton>
