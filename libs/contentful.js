@@ -19,7 +19,7 @@ class Contentful {
 
   getAllImages() {
     return this.client
-      .getEntries({ content_type: this.contentTypes.images })
+      .getEntries({ content_type: this.contentTypes.images, limit: 600 })
       .then((entry) => {
         return entry.items.map((entry) => {
           const { room, project, image, primaryImage } = entry.fields;
