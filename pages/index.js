@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import SecondaryButton from "../components/ButtonSecondary";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -20,9 +19,10 @@ export default function Home() {
       </div>
       <div className="relative h-screen w-full">
         <Image
-          className="brightness-75 object-cover"
+          className="brightness-75"
           src="/Davis.jpeg"
           layout="fill"
+          objectFit="cover"
           priority
         />
         <ImageBorder />
@@ -76,9 +76,11 @@ export default function Home() {
         />
         <ImageBorder />
         <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
-          <SecondaryButton>
-            <Link href="/gallery">Featured Projects</Link>
-          </SecondaryButton>
+          <Link href="/gallery">
+            <a className="text-white uppercase border-4 w-fit py-2 px-6 font-semibold tracking-wider text-lg cursor-pointer">
+              Featured Projects
+            </a>
+          </Link>
         </div>
       </div>
       <Footer />

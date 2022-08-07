@@ -1,8 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import SecondaryButton from "../components/ButtonSecondary";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -132,10 +130,11 @@ export default function Gallery({ projects, rooms }) {
                   className="brightness-75 w-full h-full object-cover"
                 />
                 <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
-                  <button onClick={() => filterByProject(projects[projectKey])}>
-                    <SecondaryButton>
-                      <div>{projectKey}</div>
-                    </SecondaryButton>
+                  <button
+                    onClick={() => filterByProject(projects[projectKey])}
+                    className="text-white uppercase border-4 w-fit py-2 px-6 font-semibold tracking-wider text-lg"
+                  >
+                    <div>{projectKey}</div>
                   </button>
                 </div>
               </div>

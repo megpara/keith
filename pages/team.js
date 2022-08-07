@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
@@ -78,10 +79,13 @@ export default function Team() {
       <div className="md:visible invisible">
         <CircleIndicator />
       </div>
-      <div className="relative h-[75vh]">
-        <img
-          className="brightness-75 h-[75vh] w-full object-cover md:object-center object-right"
-          src="KellyResidenceguesthouse1.jpg"
+      <div className="relative h-[75vh] w-full">
+        <Image
+          className="brightness-75 md:object-center object-right"
+          src="/KellyResidenceguesthouse1.jpg"
+          layout="fill"
+          objectFit="cover"
+          priority
         />
         <ImageBorderSmall />
       </div>

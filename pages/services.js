@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
@@ -14,10 +15,13 @@ export default function Services() {
       <div className="md:visible invisible">
         <CircleIndicator />
       </div>
-      <div className="relative h-[75vh]">
-        <img
-          className="brightness-75 h-[75vh] w-full object-cover"
-          src="Houston-1_25.jpeg"
+      <div className="relative h-[75vh] w-full">
+        <Image
+          className="brightness-75"
+          src="/Houston-1_25.jpeg"
+          layout="fill"
+          objectFit="cover"
+          priority
         />
         <ImageBorderSmall />
       </div>

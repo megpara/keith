@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -13,10 +14,13 @@ export default function Company() {
       <div className="md:visible invisible">
         <CircleIndicator />
       </div>
-      <div className="relative h-[75vh]">
-        <img
-          className="brightness-75 h-[75vh] w-full object-cover"
-          src="WhistlingStraitsliving1.jpg"
+      <div className="relative h-[75vh] w-full">
+        <Image
+          className="brightness-75"
+          src="/WhistlingStraitsliving1.jpg"
+          layout="fill"
+          objectFit="cover"
+          priority
         />
         <ImageBorderSmall />
       </div>
@@ -42,10 +46,13 @@ export default function Company() {
           College Station and Houston.
         </div>
       </Paragraph>
-      <div className="relative h-[75vh]">
-        <img
-          className="brightness-95 h-[75vh] w-full object-cover object-bottom"
-          src="VonieffEveningExterior.jpg"
+      <div className="relative h-[75vh] w-full">
+        <Image
+          className="brightness-95"
+          src="/VonieffEveningExterior.jpg"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="bottom"
         />
         <ImageBorderSmall />
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -29,10 +30,14 @@ export default function Accolades() {
       <div className="md:visible invisible">
         <CircleIndicator />
       </div>
-      <div className="relative h-[75vh]">
-        <img
-          className="brightness-75 h-[75vh] w-full object-cover object-top"
-          src="Indian-Lakes-1_backyard-1.jpeg"
+      <div className="relative h-[75vh] w-full">
+        <Image
+          className="brightness-75"
+          src="/Indian-Lakes-1_backyard-1.jpeg"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top"
+          priority
         />
         <ImageBorderSmall />
       </div>
@@ -49,10 +54,12 @@ export default function Accolades() {
         </div>
         <div className="title paragraphTitle">Susan McElroy, Customer</div>
       </Paragraph>
-      <div className="relative h-[100vh]">
-        <img
-          className="brightness-[0.65] h-[100vh] w-full object-cover"
-          src="ECH2015TR_025.jpg"
+      <div className="relative h-[100vh] w-full">
+        <Image
+          className="brightness-[0.65]"
+          src="/ECH2015TR_025.jpg"
+          layout="fill"
+          objectFit="cover"
         />
         <ImageBorder />
         <div className="absolute flex top-0 left-0 w-full h-full flex-col justify-center text-center text-white">
