@@ -6,7 +6,19 @@ export default function Layout({ children }) {
       <Head>
         <title>Ellis Custom Homes</title>
         <meta name="description" content="Ellis Custom Homes" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property="og:title"
+          content="Ellis Custom Homes | Premium Custom Homebuilding | College "
+          key="ogtitle"
+        />
+        <meta property="og:image" content="/Davis.jpeg" />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon.ico.png"
+        />
         <link rel="stylesheet" href="https://use.typekit.net/vns6pru.css" />
       </Head>
       {children}

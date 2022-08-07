@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -22,10 +23,35 @@ export default function Gallery({ projects, rooms }) {
   const [projectFilter, setProjectFilter] = useState(false);
   const [projectImages, setProjectImages] = useState([]);
 
-  const filterByProject = (images) => {
+  const router = useRouter();
+
+  const filterByProject = (projectKey) => {
     setProjectFilter(true);
-    setProjectImages(images);
+    setProjectImages(projects[projectKey]);
+    router.push("?project=" + projectKey, undefined, { shallow: true });
   };
+
+  useEffect(() => {
+    const handleRouteChange = (url, { shallow }) => {
+      console.log(
+        `App is changing to ${url} ${
+          shallow ? "with" : "without"
+        } shallow routing ${router.query.project}`
+      );
+      if (!url.includes("project") && !url.includes("room")) {
+        setProjectFilter(false);
+        setRoomFilter(false);
+      }
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, []);
 
   const getPrimaryImage = (images) => {
     var primary = images.find((image) => {
@@ -39,11 +65,13 @@ export default function Gallery({ projects, rooms }) {
     setDropdownOpen(!dropdownOpen);
     setRoomImages(rooms[room]);
     setRoomName(room);
+    router.push("?room=" + room, undefined, { shallow: true });
   };
 
   const closeFilters = () => {
     setProjectFilter(false);
     setRoomFilter(false);
+    router.replace("/gallery", undefined, { shallow: true });
   };
 
   return (
@@ -131,7 +159,7 @@ export default function Gallery({ projects, rooms }) {
                 />
                 <div className="absolute h-full w-full top-0 flex flex-col justify-center items-center">
                   <button
-                    onClick={() => filterByProject(projects[projectKey])}
+                    onClick={() => filterByProject(projectKey)}
                     className="text-white uppercase border-4 w-fit py-2 px-6 font-semibold tracking-wider text-lg"
                   >
                     <div>{projectKey}</div>
