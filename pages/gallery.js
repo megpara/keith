@@ -24,8 +24,13 @@ export default function Gallery({ projects, rooms }) {
   const [projectImages, setProjectImages] = useState([]);
 
   const router = useRouter();
+  // Clean up url on refresh
+  useEffect(() => {
+    router.push("/gallery");
+  }, []);
 
   const filterByProject = (projectKey) => {
+    window.scrollTo(0, window.innerHeight);
     setProjectFilter(true);
     setProjectImages(projects[projectKey]);
     router.push("?project=" + projectKey, undefined, { shallow: true });
@@ -46,8 +51,6 @@ export default function Gallery({ projects, rooms }) {
 
     router.events.on("routeChangeComplete", handleRouteChange);
 
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method:
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
