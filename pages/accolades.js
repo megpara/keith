@@ -66,7 +66,7 @@ export default function Accolades() {
           <div className="title paragraphTitle !text-white">
             "We are beyond pleased with our new home."
           </div>
-          <div className="md:text-sm text-[7px] uppercase tracking-[0.4em] text-center">
+          <div className="md:text-sm text-[12px] uppercase tracking-[0.4em] text-center">
             Carrie & Sue Ellen Bass, Customers
           </div>
         </div>
