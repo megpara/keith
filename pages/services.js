@@ -47,7 +47,7 @@ export default function Services() {
                 documentation.
               </div>
               <Link href="/gallery">
-                <div className="text-xs underline underline-offset-4 decoration-[0.5px]">
+                <div className="text-xs underline underline-offset-4 decoration-[0.5px] cursor-pointer">
                   View projects
                 </div>
               </Link>
@@ -70,7 +70,7 @@ export default function Services() {
                 acute attention to the principles of architecture and design.
               </div>
               <Link href="/gallery">
-                <div className="text-xs underline underline-offset-4 decoration-[0.5px]">
+                <div className="text-xs underline underline-offset-4 decoration-[0.5px] cursor-pointer">
                   View projects
                 </div>
               </Link>
@@ -104,7 +104,7 @@ export default function Services() {
                 of clients with the utmost respect for budget and timeline.
               </div>
               <Link href="/gallery">
-                <div className="text-xs underline underline-offset-4 decoration-[0.5px]">
+                <div className="text-xs underline underline-offset-4 decoration-[0.5px] cursor-pointer">
                   View projects
                 </div>
               </Link>
