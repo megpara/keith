@@ -46,7 +46,7 @@ export default function Menu({ open, toggle }) {
                 animate={{ opacity: 1 }}
                 transition={{ ease: "easeIn", duration: "2" }}
               >
-                <div className="title primaryTitle primaryColor text-right flex flex-col justify-evenly">
+                <div className="title primaryTitle menu primaryColor text-right flex flex-col justify-evenly">
                   <Link href="/">
                     <div className="cursor-pointer hover:after:content-['-']">
                       Home

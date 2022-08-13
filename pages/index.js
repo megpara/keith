@@ -53,7 +53,7 @@ export default function Home() {
           <div className={styles.pBackground}>
             <div className="md:px-36 md:py-48 px-8 py-16">
               <div className="preTitle">Premium Custom</div>
-              <div className="title paragraphTitle sm:!text-7xl">
+              <div className="title paragraphTitle sm:!text-6xl">
                 Homebuilding
               </div>
               <div className="paragraph">
