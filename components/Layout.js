@@ -8,11 +8,10 @@ export default function Layout({ children }) {
         <meta name="description" content="Ellis Custom Homes" />
         <meta
           property="og:title"
-          content="Ellis Custom Homes | Premium Custom Homebuilding | College "
+          content="Ellis Custom Homes | Premium Custom Homebuilding | TX"
           key="ogtitle"
         />
         <meta property="og:image" content="/Davis.jpeg" />
-
         <link
           rel="icon"
           type="image/png"
