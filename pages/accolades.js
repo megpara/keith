@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CircleIndicator } from "../components/CircleScroll";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -63,11 +64,13 @@ export default function Accolades() {
         />
         <ImageBorder />
         <div className="absolute flex top-0 left-0 w-full h-full flex-col justify-center text-center text-white">
-          <div className="title paragraphTitle !text-white">
-            "We are beyond pleased with our new home."
-          </div>
-          <div className="md:text-sm text-[12px] uppercase tracking-[0.4em] text-center">
-            Carrie & Sue Ellen Bass, Customers
+          <div className="p-4">
+            <div className="title paragraphTitle !text-white">
+              "We are beyond pleased with our new home."
+            </div>
+            <div className="md:text-sm text-[12px] uppercase tracking-[0.4em] text-center">
+              Carrie & Sue Ellen Bass, Customers
+            </div>
           </div>
         </div>
       </div>
@@ -79,6 +82,30 @@ export default function Accolades() {
           </div>
         ))}
       </Paragraph>
+      <div className="relative w-full flex flex-col items-center justify-center">
+        <div className="md:w-1/2 w-11/12 h-full">
+          <img src="/dubose.jpg" />
+          <div className="preTitle py-4">
+            Ellis Custom Homes: Known for Custom Detailing
+          </div>
+          <div className="paragraph pb-4">The Metropolitan Builder</div>
+          <Link href="MBArticle">
+            <div className="text-xs underline underline-offset-4 decoration-[0.5px] cursor-pointer">
+              Read the article
+            </div>
+          </Link>
+          <img className="pt-28" src="/nahb.png" />
+          <div className="paragraph pb-4">20 Clubs Member</div>
+          <div className="text-xs underline underline-offset-4 decoration-[0.5px] cursor-pointer">
+            <a
+              href="https://nahbclassic.org/page.aspx/category/sectionID=607"
+              about="_blank"
+            >
+              More info
+            </a>
+          </div>
+        </div>
+      </div>
       <Footer />
     </Layout>
   );
