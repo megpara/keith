@@ -40,22 +40,6 @@ const employees = [
       "Jennifer is a graduate from Sam Houston State University where she earned a B.S. in Interior Design in May 2005. She is married with two sons and enjoys spending time with her family—especially behind the lens of her camera as a photographer. Her dedication to customer service traces back to her very first job in Houston where she spent six years working at Astroworld.",
     ],
   },
-  {
-    name: "Daniel Pena",
-    title: "Estimator",
-    bio: [
-      "Daniel has been working in the construction industry since 2014 and has both commercial and residential experience. He joined Ellis Custom Homes in September of 2018 and brought with him his strong sense of faith, honesty and hard work. Daniel is known for his acute attention to details, his excellent communication skills and his proactive approach to getting things accomplished.",
-      "He earned his Associate’s Degree from TSTC in Building Construction Technology. His interests include reading, writing, photography/videography, camping, hiking, fishing, dancing, listening to music, playing with his dogs and just about any outdoor activity. He makes a practice of buying American-made products whenever possible. Daniel has an interesting background and was a bullfighter for a few years—where he had to develop precision, quick thinking and proactive decision-making.",
-    ],
-  },
-  {
-    name: "Melissa Gutierrez-Ortiz",
-    title: "Accounting",
-    bio: [
-      "Melissa joined the Ellis Custom Homes team in June 2017 and manages accounts payable and receivable for the firm. Additionally, she handles the company’s business financial matters and coordinates all areas of insurance for the entire building process. Melissa brings a sense of responsibility, honesty and integrity to her work and is always strategizing to find the best possible solutions for the business as well as our clients. She is an expert at time management and is always helping her co-workers whenever possible.",
-      "Melissa graduated from Stephen F. Austin State University where she earned her degree in Business Administration in December 2016. In her free time, she enjoys playing Sudoku, crafting, hand-making soaps, using Apple technology and is an avid fan of action movies. She enjoys spending time with her family and dogs and can’t pass up any colorful office supplies at the store! She practices an attitude of gratitude in her life on a daily basis.",
-    ],
-  },
 ];
 
 let modalIndex = 0;
